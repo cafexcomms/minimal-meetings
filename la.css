@@ -1,0 +1,328 @@
+/*Fonts*/
+
+/*@import url("https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");*/
+
+.black {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+@font-face {
+  font-family: "segoe-ui";
+  src: url("segoeicons.woff") format("woff");
+}
+@font-face {
+  font-family: "segoe-ui-plus";
+  src: url("segoeicons.woff") format("woff");
+}
+
+/*Logo*/
+
+#loaderLogo {
+    background-image: url("la-trans.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    mix-blend-mode: darken !important;
+}
+
+.hoverButton div.up, .hoverButton div.over {
+ background-size: 32px;
+ border: 1px lightGrey solid;
+ border-radius: 50%;
+ padding:5px;
+ font-weight: 100px;
+}
+
+.videoContent, .activeVideoContainer .thumbBaseElement .videoContent {
+    border-radius: 50% !important;
+}
+
+.activeVideoContainer .thumbBaseElement {
+    width: 500px !important;
+    height: 500px !important;
+    top:450px !important;
+}
+
+.selfVideoContainer .thumbBaseElement {
+    width: 150px !important;
+    height: 150px !important;
+    left: 50px !important;
+    bottom: 50px !important;
+}
+
+.thumbVideoContainer .thumbBaseElement {
+    width: 150px !important;
+    height: 150px !important;
+    right: 50px !important;
+    bottom: 50px !important;
+}
+
+#topBar {
+    background-image: url("https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/56055/ZtJbXq5Q0Kyv4hI9UkDM");
+    background-repeat: no-repeat;
+    background-position: 30px;
+    background-size: 160px;
+    border-bottom: 1px solid lightGrey;
+    height: 60px;
+}
+
+#loaderText {
+    font-size: 0px;
+    width:200px !important;
+    left: -90px!important;
+}
+
+#loaderText:after {
+    font-size: 30px;
+    content: "Live Assist";
+    visibility: visible;
+    display: block;
+}
+#chimeRoot {
+    background: #fff;
+}
+
+#systemUIBg {
+    border-radius: 0px;
+    background-color: white !important;
+    margin-bottom: 20px;
+}
+
+#leaveSeparator {
+    border: 0px solid white;
+}
+
+.thumbVideoContainer {
+    top: auto;
+    bottom: 2px;
+}
+
+.activeVideoContainer .thumbBaseElement {
+    width: 100%;
+    height: calc(100% - 165px);
+    top: calc(50% + 30px);
+}
+
+.thumbBaseElement {
+    border-radius: 0%;
+}
+
+.selfThumbInitials {
+    color: black;
+}
+
+.thumbVideoContainer .thumbBaseElement {
+    width: 150px;
+    height: 100px;
+    margin-right: 3px;
+}
+
+.selfVideoContainer .thumbBaseElement {
+    width: 150px;
+    height: 100px;
+    left: 3px;
+}
+
+.thumbBaseElement .videoContent {
+    border-radius: 0%;
+}
+
+.showHide.show.top {
+    bottom: 0px;
+    top: auto;
+}
+
+.selfVideoContainer .thumbBaseElement, .thumbVideoContainer .thumbBaseElement {
+    bottom: 2px;
+    top: auto;
+}
+
+.settingsPanel .chevron input[type=submit], .rtShare .documentItem .presentButton,
+    .chat #chatSendButton {
+    background-color: #eeeeee;
+}
+
+.chimeform input[type=button], .chimeform input[type=submit] {
+    background-color: #cccccc;
+}
+
+.chimeAlert {
+    background-color: #eeeeee;
+}
+
+.chimeAlert #alert_heading, 
+.chimeAlert #alert_subheading,
+.chimeAlert H1 {
+    background-color: #444444;
+}
+
+.chevron::after {
+    border-color: #000000;
+}
+
+.invite {
+    display: none;
+}
+
+/* Images */
+.chimeSystemMessageLogo {
+    background-image: url(logo.png);
+}
+
+
+.mutedIcon:before, .videoMutedIcon:before  {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 6px;
+    background-color: white;
+}
+
+.hoverButton div, .mutedIcon, .videoMutedIcon {
+ background-image: url("") !important;
+ color: #171e37;
+}
+
+.mutedIcon:before {
+    background-image: url("") !important;
+    font-family: "segoe-ui";
+    content: "\E720";
+    font-size: 22px;
+    color:#e5224a;
+}
+
+.videoMutedIcon:before {
+    background-image: url("") !important;
+    font-family: "segoe-ui";
+    content: "\E979";
+    font-size: 30px;
+    text-decoration: line-through;
+    color:#e5224a;
+}
+
+.chat.up:before, .chatButton .up:before, .chat.over:before, .chatButton .over:before {
+    background-image: url("") !important;
+    font-family: "segoe-ui-plus";
+    content: "\E8F2";
+    font-size: 30px;
+}
+
+.participantsIcon.up:before, .participantsIcon .up:before, .participantsIcon.over:before, .participantsIcon .over:before {
+    font-family: "segoe-ui";
+    content: "\E716";
+    font-size: 30px;
+}
+
+.docShare.up:before, .docShare .up:before, .docShare.over:before, .docShare .over:before {
+    font-family: "segoe-ui";
+    content: "\E72D";
+    font-size: 30px;
+}
+
+.settings.up:before, .settings .up:before, .settings.over:before, .settings .over:before {
+    background-image: none;
+    font-family: "segoe-ui";
+    content: "\E713";
+    font-size: 30px;
+}
+
+.enterFullscreen.up:before, .enterFullscreen .up:before, .enterFullscreen.over:before, .enterFullscreen .over:before, .exitFullscreen.up:before, .exitFullscreen .up:before,
+.exitFullscreen.over:before, .exitFullscreen .over:before {
+    background-image: none;
+    font-family: "segoe-ui";
+    content: "\E9A6";
+    font-size: 30px;
+}
+
+.leave.up:before, .leave .up:before, .leave.over:before, .leave .over:before {
+    background-image: none;
+    font-family: "segoe-ui";
+    content: "\E711";
+    font-size: 30px;
+}
+
+.micOff .up:before, .micOff.up:before, .micOff .over:before, .micOff.over:before, .micOn .over:before, .micOn.over:before  {
+    background-image: none;
+    font-family: "segoe-ui";
+    content: "\E720";
+    font-size: 30px;
+    color:#e5224a;
+}
+
+.micOn .up:before, .micOn.up:before{
+    background-image: none;
+    font-family: "segoe-ui";
+    content: "\E720";
+    font-size: 30px;
+}
+
+.cameraOff .up:before, .cameraOff.up:before, .cameraOff .over:before, .cameraOff.over:before, .cameraOn .over:before, .cameraOn.over:before {
+    background-image: none;
+    font-family: "segoe-ui";
+    content: "\E714";
+    font-size: 30px;
+    color:#e5224a;
+}
+
+.cameraOn .up:before, .cameraOn.up:before {
+    background-image: none;
+    font-family: "segoe-ui";
+    content: "\E714";
+    font-size: 30px;
+}
+
+
+/* Dialogues */
+
+#dialogContainer form {
+    background-color: lightgrey;
+    color: black;
+}
+
+#dialogContainer h1 {
+    background-color: white;
+}
+
+#dialogContainer .dialog_subheading {
+    background-color: white;
+}
+
+#dialogContainer input.button {
+    background-color: white;
+}
+
+#dialogContainer input.button:hover {
+    color: grey;
+}
+
+
+#dialogContainer textarea {
+    color: grey;
+}
+
+#dialogBG {
+    background:rgba(120,120,120,0.8) !important;
+}
+
+/* Panels */
+
+.chat div#background, .rtShare div#background, 
+.rtRoster div#background, .settingsPanel div#background,
+.disclaimerPanel div#background {
+    background: rgba(160,160,160,0.8);
+}
+
+#chimePanels #topSpace {
+    background: rgba(80,80,80,0.8);
+}
+
+#chatMessagesContainer div, #chimePanels #topSpace, #topSpace #heading
+ {
+    color: white !important;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+}
