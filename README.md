@@ -1,4 +1,4 @@
-# Live Assist-Meetings
+# Minimal-Meetings
 
 1) Login to https://chimemeetings.com
 2) Access https://chimemeetings.com/chime/admin
@@ -11,7 +11,7 @@
 9) Make sure the color value is set to #ffffff (white)
 10) Set "Custom Style Sheet Link" to your hosted version of this file:
 
-   https://raw.githubusercontent.com/cafexthemes/live-assist/master/la.css
+   https://raw.githubusercontent.com/cafexthemes/minimal-meetings/master/minimal.css
 
 11) Save the settings. 
 
