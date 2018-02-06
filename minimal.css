@@ -75,7 +75,7 @@
 
 #loaderText:after {
     font-size: 30px;
-    content: "White";
+    content: "Minimal";
     visibility: visible;
     display: block;
 }
