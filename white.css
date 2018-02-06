@@ -20,7 +20,7 @@
 /*Logo*/
 
 #loaderLogo {
-    background-image: url("la-trans.png");
+    background-image: url("cafex.jpg");
     background-position: 50% 50%;
     background-size: cover;
     mix-blend-mode: darken !important;
@@ -41,7 +41,7 @@
 .activeVideoContainer .thumbBaseElement {
     width: 500px !important;
     height: 500px !important;
-    top:450px !important;
+    top:400px !important;
 }
 
 .selfVideoContainer .thumbBaseElement {
@@ -75,7 +75,7 @@
 
 #loaderText:after {
     font-size: 30px;
-    content: "Live Assist";
+    content: "White Meetings";
     visibility: visible;
     display: block;
 }
