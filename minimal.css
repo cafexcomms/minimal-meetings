@@ -67,6 +67,11 @@
     height: 60px;
 }
 
+#topBar {
+    background-color: white !important;
+
+    }
+
 #loaderText {
     font-size: 0px;
     width:200px !important;
@@ -126,6 +131,13 @@
 
 .thumbBaseElement .videoContent {
     border-radius: 0%;
+    
+}
+
+.thumbBaseElement .videoContent, .videoContent {
+    border-color: white !important;
+    background-color: white !important;
+    color: white !important;
 }
 
 .showHide.show.top {
@@ -284,19 +296,26 @@
     font-size: 30px;
 }
 
+.userFeedback .up:before, .userFeedback.up:before, .userFeedback .over:before, .userFeedback.over:before, .userFeedback .over:before, .userFeedback.over:before  {
+    background-image: none;
+    font-family: "segoe-ui";
+    content: "\E789";
+    font-size: 30px;
+}
+
 
 /* Dialogues */
 
-#dialogContainer form {
+#dialogContainer form, .feedbackForm {
     background-color: lightgrey;
     color: black;
 }
 
-#dialogContainer h1 {
+#dialogContainer h1, .uff_heading {
     background-color: white;
 }
 
-#dialogContainer .dialog_subheading {
+#dialogContainer .dialog_subheading, .uff_subheading {
     background-color: white;
 }
 
