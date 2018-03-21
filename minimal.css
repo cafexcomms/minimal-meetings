@@ -28,7 +28,7 @@
 
 .hoverButton div.up, .hoverButton div.over {
  background-size: 32px;
- border: 1px lightGrey solid;
+ /*border: 1px lightGrey solid;*/
  border-radius: 50%;
  padding:5px;
  font-weight: 100px;
@@ -303,8 +303,23 @@
     font-size: 30px;
 }
 
+.disclaimerButton .up:before, .disclaimerButton.up:before, .disclaimerButton .over:before, .disclaimerButton.over:before, .disclaimerButton .over:before, .disclaimerButton.over:before  {
+    background-image: none;
+    font-family: "segoe-ui";
+    content: "\E946";
+    font-size: 30px;
+}
+
 
 /* Dialogues */
+
+.button {
+    background-color: darkgrey !important;
+}
+
+.chimeCheckBox input[type=checkbox]:checked ~ .check {
+    border: 2px solid black !important;
+}
 
 #dialogContainer form, .feedbackForm {
     background-color: lightgrey;
@@ -315,7 +330,7 @@
     background-color: white;
 }
 
-#dialogContainer .dialog_subheading, .uff_subheading {
+#dialogContainer .dialog_subheading, .uff_subheading, #pref_subheading {
     background-color: white;
 }
 
