@@ -266,7 +266,7 @@
 }
 
 
-.font-button-message:before, .recordButton.up:before, .recordButton .up:before, .recordButton.over:before, .recordButton .over:before {
+.font-button-record:before, .recordButton.up:before, .recordButton .up:before, .recordButton.over:before, .recordButton .over:before {
     background-image: none;
     font-family: "segoe-ui" !important;
     content: "\E81D";
