@@ -366,6 +366,10 @@
     background: rgba(160,160,160,0.8);
 }
 
+#meetingsPanels {
+    top: 0px !important;
+}
+
 #meetingsPanels #topSpace {
     background: rgba(80,80,80,0.8);
 }
