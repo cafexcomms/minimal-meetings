@@ -40,14 +40,15 @@
  font-weight: 100px;
 }
 
-.videoContent, .activeVideoContainer .thumbBaseElement .videoContent {
+.selfVideoContainer  .thumbBaseElement .videoContent {
     border-radius: 50% !important;
 }
 
 .activeVideoContainer .thumbBaseElement {
-    width: 500px !important;
+  /*  width: 500px !important;
     height: 500px !important;
-    top:400px !important;
+    top:400px !important;*/
+
 }
 
 .selfVideoContainer .thumbBaseElement {
@@ -111,8 +112,8 @@
 
 .activeVideoContainer .thumbBaseElement {
     width: 100%;
-    height: calc(100% - 165px);
-    top: calc(50% + 30px);
+    height: calc(100%);
+    top: calc(40%);
 }
 
 .thumbBaseElement {
