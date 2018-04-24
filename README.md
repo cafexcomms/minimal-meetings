@@ -1,7 +1,7 @@
 # Minimal-Meetings
 
-1) Login to https://chimemeetings.com
-2) Access https://chimemeetings.com/chime/admin
+1) Login to https://meetings.cafex.com
+2) Access https://meetings.cafex.com/admin
 3) Go to User Interace Page
 4) Uncheck "Enable Feedback"
 5) Uncheck "Enable Locking Conference"
