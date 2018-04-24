@@ -40,8 +40,12 @@
  font-weight: 100px;
 }
 
-.selfVideoContainer  .thumbBaseElement .videoContent {
+.selfVideoContainer,  .thumbBaseElement .videoContent {
     border-radius: 50% !important;
+}
+
+.activeVideoContainer  .thumbBaseElement .videoContent {
+    border-radius: 0px !important;
 }
 
 .activeVideoContainer .thumbBaseElement {
@@ -55,7 +59,7 @@
     width: 150px !important;
     height: 150px !important;
     left: 50px !important;
-    bottom: 50px !important;
+    bottom: 70px !important;
 }
 
 .thumbVideoContainer .thumbBaseElement {
@@ -328,33 +332,33 @@
     border: 2px solid black !important;
 }
 
-#dialogContainer form, .feedbackForm {
+#dialogContainer form, .feedbackForm, #feedbackFormContainer form {
     background-color: lightgrey;
     color: black;
 }
 
-#dialogContainer h1, .uff_heading {
+#dialogContainer h1, .uff_heading, #feedbackFormContainer h1 {
     background-color: white;
 }
 
-#dialogContainer .dialog_subheading, .uff_subheading, #pref_subheading {
+#dialogContainer .dialog_subheading, .uff_subheading, #pref_subheading, #feedbackFormContainer .subheading {
     background-color: white;
 }
 
-#dialogContainer input.button {
+#dialogContainer input.button, #feedbackFormContainer input[type="button"] {
     background-color: white;
 }
 
-#dialogContainer input.button:hover {
+#dialogContainer input.button:hover, #feedbackFormContainer input[type="button"]:hover {
     color: grey;
 }
 
 
-#dialogContainer textarea {
+#dialogContainer textarea, #feedbackFormContainer textarea {
     color: grey;
 }
 
-#dialogBG {
+#dialogBG, #feedbackFormBG {
     background:rgba(120,120,120,0.8) !important;
 }
 
