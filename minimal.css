@@ -10,19 +10,25 @@
 
 @font-face {
   font-family: "segoe-ui";
+    font-display: auto;
   src: url("segoeicons.woff") format("woff");
 }
 @font-face {
   font-family: "segoe-ui-plus";
-  src: url("segoeicons.woff") format("woff");
+  font-display: auto;
+  src: url("segoeicons_plus.woff") format("woff");
+}
+
+#muteSeparator, #leaveSeparator {
+    visibility: hidden !important;
 }
 
 /*Logo*/
 
 #loaderLogo {
-    background-image: url("cafex.jpg");
-    background-position: 50% 50%;
-    background-size: cover;
+    background-image: url("../images/cafex.jpg");
+    /*background-position: 50% 50%;*/
+    /*background-size: cover;*/
     mix-blend-mode: darken !important;
 }
 
@@ -84,7 +90,7 @@
     visibility: visible;
     display: block;
 }
-#chimeRoot {
+#meetingsRoot {
     background: #fff;
 }
 
@@ -155,17 +161,17 @@
     background-color: #eeeeee;
 }
 
-.chimeform input[type=button], .chimeform input[type=submit] {
+.meetingsform input[type=button], .meetingsform input[type=submit] {
     background-color: #cccccc;
 }
 
-.chimeAlert {
+.meetingsAlert {
     background-color: #eeeeee;
 }
 
-.chimeAlert #alert_heading, 
-.chimeAlert #alert_subheading,
-.chimeAlert H1 {
+.meetingsAlert #alert_heading, 
+.meetingsAlert #alert_subheading,
+.meetingsAlert H1 {
     background-color: #444444;
 }
 
@@ -175,12 +181,12 @@
 
 
 /* Images */
-.chimeSystemMessageLogo {
+.meetingsSystemMessageLogo {
     background-image: url(logo.png);
 }
 
 
-.mutedIcon:before, .videoMutedIcon:before  {
+.font-button-microphone-off:before, .font-button-camera-off:before, .mutedIcon:before, .videoMutedIcon:before  {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -193,112 +199,112 @@
  color: #171e37;
 }
 
-.mutedIcon:before {
+.font-button-microphone-off:before, .mutedIcon:before {
     background-image: url("") !important;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E720";
     font-size: 22px;
     color:#e5224a;
 }
 
-.videoMutedIcon:before {
+.font-button-camera-off:before, .videoMutedIcon:before {
     background-image: url("") !important;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E979";
     font-size: 30px;
     text-decoration: line-through;
     color:#e5224a;
 }
 
-.chat.up:before, .chatButton .up:before, .chat.over:before, .chatButton .over:before {
+.font-button-chat:before, .chat.up:before, .chatButton .up:before, .chat.over:before, .chatButton .over:before {
     background-image: url("") !important;
-    font-family: "segoe-ui-plus";
+    font-family: "segoe-ui-plus" !important;
     content: "\E8F2";
     font-size: 30px;
 }
 
-.participantsIcon.up:before, .participantsIcon .up:before, .participantsIcon.over:before, .participantsIcon .over:before {
-    font-family: "segoe-ui";
+.font-button-participants:before, .participantsIcon.up:before, .participantsIcon .up:before, .participantsIcon.over:before, .participantsIcon .over:before {
+    font-family: "segoe-ui" !important;
     content: "\E716";
     font-size: 30px;
 }
 
-.docShare.up:before, .docShare .up:before, .docShare.over:before, .docShare .over:before {
-    font-family: "segoe-ui";
+.font-button-present:before, .docShare.up:before, .docShare .up:before, .docShare.over:before, .docShare .over:before {
+    font-family: "segoe-ui" !important;
     content: "\E72D";
     font-size: 30px;
 }
 
-.settings.up:before, .settings .up:before, .settings.over:before, .settings .over:before {
+.font-button-settings:before, .settings.up:before, .settings .up:before, .settings.over:before, .settings .over:before {
     background-image: none;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E713";
     font-size: 30px;
 }
 
-.enterFullscreen.up:before, .enterFullscreen .up:before, .enterFullscreen.over:before, .enterFullscreen .over:before, .exitFullscreen.up:before, .exitFullscreen .up:before,
+.font-button-enter-fullscreen:before, .enterFullscreen.up:before, .enterFullscreen .up:before, .enterFullscreen.over:before, .enterFullscreen .over:before, .exitFullscreen.up:before, .exitFullscreen .up:before,
 .exitFullscreen.over:before, .exitFullscreen .over:before {
     background-image: none;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E9A6";
     font-size: 30px;
 }
 
-.leave.up:before, .leave .up:before, .leave.over:before, .leave .over:before {
+.font-button-leave:before, .leave.up:before, .leave .up:before, .leave.over:before, .leave .over:before {
     background-image: none;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E711";
     font-size: 30px;
 }
 
-.inviteButton.up:before, .inviteButton .up:before, .inviteButton.over:before, .inviteButton .over:before {
+.font-button-message:before, .inviteButton.up:before, .inviteButton .up:before, .inviteButton.over:before, .inviteButton .over:before {
     background-image: none;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E715";
     font-size: 30px;
 }
 
 
-.recordButton.up:before, .recordButton .up:before, .recordButton.over:before, .recordButton .over:before {
+.font-button-message:before, .recordButton.up:before, .recordButton .up:before, .recordButton.over:before, .recordButton .over:before {
     background-image: none;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E81D";
     font-size: 30px;
 }
 
-.micOff .up:before, .micOff.up:before, .micOff .over:before, .micOff.over:before, .micOn .over:before, .micOn.over:before  {
+.font-button-microphone-off:before, .micOff .up:before, .micOff.up:before, .micOff .over:before, .micOff.over:before, .micOn .over:before, .micOn.over:before  {
     background-image: none;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E720";
     font-size: 30px;
     color:#e5224a;
 }
 
-.micOn .up:before, .micOn.up:before{
+.font-button-microphone-on:before, .micOn .up:before, .micOn.up:before{
     background-image: none;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E720";
     font-size: 30px;
 }
 
-.cameraOff .up:before, .cameraOff.up:before, .cameraOff .over:before, .cameraOff.over:before, .cameraOn .over:before, .cameraOn.over:before {
+.font-button-camera-off:before, .cameraOff .up:before, .cameraOff.up:before, .cameraOff .over:before, .cameraOff.over:before, .cameraOn .over:before, .cameraOn.over:before {
     background-image: none;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E714";
     font-size: 30px;
     color:#e5224a;
 }
 
-.cameraOn .up:before, .cameraOn.up:before {
+.font-button-camera-on:before, .cameraOn .up:before, .cameraOn.up:before {
     background-image: none;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E714";
     font-size: 30px;
 }
 
-.userFeedback .up:before, .userFeedback.up:before, .userFeedback .over:before, .userFeedback.over:before, .userFeedback .over:before, .userFeedback.over:before  {
+.font-button-feedback:before, .userFeedback .up:before, .userFeedback.up:before, .userFeedback .over:before, .userFeedback.over:before, .userFeedback .over:before, .userFeedback.over:before  {
     background-image: none;
-    font-family: "segoe-ui";
+    font-family: "segoe-ui" !important;
     content: "\E789";
     font-size: 30px;
 }
@@ -317,7 +323,7 @@
     background-color: darkgrey !important;
 }
 
-.chimeCheckBox input[type=checkbox]:checked ~ .check {
+.meetingsCheckBox input[type=checkbox]:checked ~ .check {
     border: 2px solid black !important;
 }
 
@@ -359,11 +365,11 @@
     background: rgba(160,160,160,0.8);
 }
 
-#chimePanels #topSpace {
+#meetingsPanels #topSpace {
     background: rgba(80,80,80,0.8);
 }
 
-#chatMessagesContainer div, #chimePanels #topSpace, #topSpace #heading
+#chatMessagesContainer div, #meetingsPanels #topSpace, #topSpace #heading
  {
     color: white !important;
 }
